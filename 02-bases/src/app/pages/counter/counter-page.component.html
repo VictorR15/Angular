@@ -1,0 +1,8 @@
+<!-- SE UTILIZA DOBLE LLAVE PARA PONER VARIABLES -->
+<h1>Counter: {{ counter }}</h1>
+<h1>Counter: {{ counterSignal() }}</h1>
+<!-- DENTRO DE LA ETIQUETA SE PONE EL EVENTO ENTRE PARENTESIS Y SE LE PASA LA
+    FUNCION QUE SE DESEA HACER CON EL EVENTO  -->
+<button (click)="increseBy(1)">+1</button>
+<button (click)="increseBy(-1)">-1</button>
+<button (click)="resetCounter()">Reset</button>

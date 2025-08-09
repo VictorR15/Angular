@@ -1,0 +1,16 @@
+<!-- Ahora usamos el evento "entrada" que ya en el componente
+  esta su logica el cual espera a que el usuario de click o enter
+-->
+<!-- En este html se envia el valor que se desea mostrar en el
+    componente hijo
+  -->
+<country-search-input
+  (entrada)="query.set($event)"
+  placeholder="Buscar por capital"
+></country-search-input>
+<country-list
+  [countries]="capitalRecurso.value() ?? []"
+  [errorMessage]="capitalRecurso.error()"
+  [isEmpty]="capitalRecurso.value()?.length === 0"
+  [isLoading]="capitalRecurso.isLoading()"
+></country-list>

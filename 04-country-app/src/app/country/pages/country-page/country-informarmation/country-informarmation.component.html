@@ -1,0 +1,93 @@
+<section class="mx-10 flex justify-center">
+  <div class="stats shadow">
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          viewBox="0 0 56 56"
+        >
+          <path
+            fill="currentColor"
+            d="M28 4c9.389 0 17 7 17 19c0 4.764-2.679 10.63-5.91 15.974l-.543.885q-.275.44-.551.874l-.558.861l-.28.425l-.561.839l-.563.82l-.56.803l-.556.782l-.55.76l-.542.735l-.531.71l-.519.682l-.749.97l-.708.898l-.66.822l-.207.256c-1.354 1.604-3.627 1.54-4.903 0l-.642-.794l-.692-.874l-.487-.623l-.503-.654l-.783-1.034l-.537-.723l-.546-.747l-.553-.771l-.559-.792l-.562-.812l-.562-.83q-.28-.42-.56-.847l-.558-.86l-.551-.875l-.543-.885C13.679 33.63 11 27.764 11 23c0-12 7.611-19 17-19m0 4c-7.622 0-13 5.682-13 15c0 3.345 1.746 7.812 4.61 12.747l.503.85l.523.859l.544.867l.279.436l.573.876l.592.883l.61.888l.627.892l.644.896l.328.45l.668.9l.605.799l.312.405a2 2 0 0 0 3.163 0l.568-.74l.676-.904l.661-.9l.645-.897l.629-.894l.61-.889q.302-.443.593-.884l.574-.877q.706-1.094 1.348-2.164l.502-.85C39.255 30.81 41 26.343 41 23c0-9.318-5.378-15-13-15m0 5a8 8 0 1 1 0 16a8 8 0 0 1 0-16m0 4a4 4 0 1 0 0 8a4 4 0 0 0 0-8"
+          />
+        </svg>
+      </div>
+      <div class="stat-title">PAIS</div>
+      <div class="stat-value">{{ pais()?.name }}</div>
+      <div class="stat-desc">{{ pais()?.capital }}</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          viewBox="0 0 56 56"
+        >
+          <path
+            fill="currentColor"
+            d="M38.723 28.549c4.417 0 8.217-3.944 8.217-9.08c0-5.074-3.82-8.833-8.217-8.833c-4.396 0-8.217 3.841-8.217 8.874c0 5.095 3.8 9.039 8.217 9.039m-23.645.473c3.821 0 7.15-3.452 7.15-7.91c0-4.416-3.35-7.683-7.15-7.683c-3.82 0-7.19 3.349-7.169 7.725c0 4.416 3.328 7.868 7.17 7.868M3.616 47.572h15.612c-2.136-3.102.473-9.347 4.89-12.757c-2.28-1.52-5.219-2.65-9.06-2.65C5.793 32.164 0 39.004 0 44.695c0 1.85 1.027 2.877 3.616 2.877m22.186 0h25.822c3.225 0 4.376-.925 4.376-2.733c0-5.3-6.636-12.613-17.297-12.613c-10.641 0-17.277 7.313-17.277 12.614c0 1.807 1.15 2.732 4.376 2.732"
+          />
+        </svg>
+      </div>
+      <div class="stat-title">New Users</div>
+      <div class="stat-value">4,200</div>
+      <div class="stat-desc">↗︎ 400 (22%)</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block h-8 w-8 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+          ></path>
+        </svg>
+      </div>
+      <div class="stat-title">Poblacion</div>
+      <div class="stat-value">{{ pais()?.population | number }}</div>
+      <div class="stat-desc">↘︎ 90 (14%)</div>
+    </div>
+  </div>
+</section>
+
+<section class="m-10 flex justify-center">
+  <div class="stat">
+    <div class="stat-figure text-secondary">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="56"
+        height="56"
+        viewBox="0 0 56 56"
+      >
+        <path
+          fill="currentColor"
+          d="M11.969 52.293c.96.727 2.18.469 3.633-.586L28 42.613l12.422 9.094c1.453 1.055 2.648 1.313 3.633.586c.96-.727 1.172-1.922.586-3.633l-4.899-14.578l12.516-9c1.453-1.031 2.039-2.11 1.664-3.281c-.375-1.125-1.477-1.688-3.281-1.664l-15.352.093l-4.664-14.648C30.063 3.848 29.22 2.981 28 2.981c-1.195 0-2.039.867-2.602 2.601L20.734 20.23l-15.351-.093c-1.805-.024-2.906.539-3.281 1.664c-.399 1.172.21 2.25 1.664 3.281l12.515 9l-4.898 14.578c-.586 1.711-.375 2.906.586 3.633"
+        />
+      </svg>
+    </div>
+    <div class="stat-title">Nombre oficial</div>
+    <div class="stat-value">{{ pais()?.official }}</div>
+  </div>
+</section>
+
+<section class="m-10 flex justify-center">
+  <div class="card bg-base-100 image-full w-96 shadow-sm">
+    <figure>
+      <img [src]="pais()?.flagSvg" alt="Shoes" />
+    </figure>
+    <div class="card-body flex items-end">
+      <h2 class="card-title">{{ pais()?.nameKor }}</h2>
+    </div>
+  </div>
+</section>

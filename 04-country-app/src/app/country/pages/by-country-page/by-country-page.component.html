@@ -1,0 +1,11 @@
+<country-search-input
+  [placeholder]="'Buscar por pais'"
+  (entrada)="query.set($event)"
+></country-search-input>
+
+<country-list
+  [countries]="paisResource.value() ?? []"
+  [errorMessage]="paisResource.error()"
+  [isEmpty]="paisResource.value()?.length === 0"
+  [isLoading]="paisResource.isLoading()"
+></country-list>

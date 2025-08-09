@@ -1,0 +1,16 @@
+@if (paisRecurso.error()) {
+<app-not-found></app-not-found>
+}
+
+<!--  -->
+@if (paisRecurso.isLoading()) {
+<span class="loading loading-spinner text-info"></span>
+Cargando }
+
+<!--  -->
+@if (paisRecurso.hasValue()) {
+<country-informarmation-page
+  [pais]="paisRecurso.value()!"
+></country-informarmation-page>
+
+}

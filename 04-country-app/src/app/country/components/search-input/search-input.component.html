@@ -1,0 +1,19 @@
+<section class="flex flex-row gap-2 mt-2">
+  <!-- En el evento espera que que el usuario escribra algo y de enter toda esa
+   logica del evento se guarda en "entrada"
+    -->
+  <!-- El placeholder recibe un valor del componente padre y lo muestra en el
+    placeholder
+   -->
+  <input
+    type="text"
+    class="input input-border mr-2 w-56"
+    [placeholder]="placeholder()"
+    autofocus
+    (keyup.enter)="entrada.emit(txtSearch.value)"
+    #txtSearch
+  />
+  <button class="btn btn-primary" (click)="entrada.emit(txtSearch.value)">
+    Buscar
+  </button>
+</section>

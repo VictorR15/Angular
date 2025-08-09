@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<div class="my-5">
+  <div class="flex justify-center mt-5">
+    @for (frase of fraseResource.value(); track frase.quote) {
+
+    <app-card [autor]="frase.author" [frase]="frase.quote"></app-card>
+
+    }
+  </div>
+  <div class="flex flex-col justify-around md:flex-row">
+    <button (click)="nuevaFrase()" class="btn btn-primary mt-5 md:min-w-70">
+      Nueva Frase
+    </button>
+    <button routerLink="/fraseCinco" class="btn btn-primary mt-5 md:min-w-70">
+      Cinco Nuevas Frases
+    </button>
+  </div>
+</div>
